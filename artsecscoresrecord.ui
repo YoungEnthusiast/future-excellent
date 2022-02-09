@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ArtSecScoreRecForm</class>
+ <widget class="QWidget" name="ArtSecScoreRecForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>985</width>
+    <height>772</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Art Senior Secondary Scores (First Term)</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>score_icon.png</normaloff>score_icon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;
+
+QPushButton{
+background-color: rgb(170, 255, 127);
+}
+</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <widget class="QGroupBox" name="groupBox">
+       <property name="styleSheet">
+        <string notr="true">QComboBox{
+background-color: rgb(165, 209, 255);
+}</string>
+       </property>
+       <property name="title">
+        <string>Record Secondary Students' Scores</string>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QComboBox" name="class_comboBox"/>
+        </item>
+        <item>
+         <widget class="QComboBox" name="stud_adm_no_comboBox"/>
+        </item>
+        <item>
+         <widget class="QLabel" name="name_label">
+          <property name="styleSheet">
+           <string notr="true">QComboBox{
+background-color: rgb(166, 180, 255);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <layout class="QGridLayout" name="gridLayout">
+           <item row="18" column="4">
+            <widget class="QSpinBox" name="geography_ass_spin"/>
+           </item>
+           <item row="7" column="6">
+            <widget class="QDoubleSpinBox" name="computer_exam_spin">
+             <property name="decimals">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item row="19" column="2">
+            <widget class="QSpinBox" name="history_c1_spin"/>
+           </item>
+           <item row="12" column="3">
+            <widget class="QSpinBox" name="qur_c2_spin"/>
+           </item>
+           <item row="19" column="6">
+            <widget class="QSpinBox" name="history_exam_spin"/>
+           </item>
+           <item row="19" column="3">
+            <widget class="QSpinBox" name="history_c2_spin"/>
+           </item>
+           <item row="21" column="2" colspan="5">
+            <widget class="QPushButton" name="qur_score_btn">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(170, 255, 127);</string>
+             </property>
+             <property name="text">
+              <string>Save</string>
+             </property>
+            </widget>
+           </item>
+           <item row="19" column="0" alignment="Qt::AlignRight">
+            <widget class="QLabel" name="label_18">
+             <property name="text">
+              <string>History</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="2">
+            <widget class="QDoubleSpinBox" name="computer_c1_spin">
+             <property name="decimals">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item row="19" column="5">
+            <widget class="QSpinBox" name="history_att_spin"/>
+           </item>
+           <item row="1" column="3">
+            <widget class="QDoubleSpinBox" name="eng_c2_spin">
+             <property name="decimals">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QDoubleSpinBox" name="eng_c1_spin">
+             <property name="decimals">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item row="19" column="4">
+            <widget class="QSpinBox" name="history_ass_spin"/>
+           </item>
+           <item row="6" column="5">
+            <widget class="QDoubleSpinBox" name="civic_att_spin">
+             <property name="decimals">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QLabel" name="label_5">
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>2ND CA</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="4">
+            <widget class="QDoubleSpinBox" name="lit_ass_spin">
+             <property name="decimals">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item row="13" column="2">
+            <widget class="QSpinBox" name="irs_c1_spin"/>
+           </item>
+           <item row="18" column="0" alignment="Qt::AlignRight">
+            <widget class="QLabel" name="label_17">
+             <property name="text">
+              <string>Geography</string>
+             </property>
+            </widget>
+           </item>
+           <item row="16" column="4">
+            <widget class="QSpinBox" name="agric_ass_spin"/>
+           </item>
+           <item row="13" column="4">
+            <widget class="QSpinBox" name="irs_ass_spin"/>
+           </item>
+           <item row="17" column="6">
+            <widget class="QSpinBox" name="govt_exam_spin"/>
+           </item>
+           <item row="16" column="6">
+            <widget class="QSpinBox" name="agric_exam_spin"/>
+           </item>
+           <item row="16" column="3">
+            <widget class="QSpinBox" name="agric_c2_spin"/>
+           </item>
+           <item row="9" column="3">
+            <widget class="QDoubleSpinBox" name="biology_c2_spin">
+             <property name="decimals">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="0">
+            <widget class="QLabel" name="label_21">
+             <property name="text">
+              <string>Civic Education</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="15" column="6">
+            <widget class="QSpinBox" name="tajweed_exam_spin"/>
+           </item>
+           <item row="12" column="2">
+            <widget class="QSpinBox" name="qur_c1_spin"/>
+           </item>
+           <item row="15" column="4">
+            <widget class="QSpinBox" name="tajweed_ass_spin"/>
+           </item>
+           <item row="3" column="3">
+            <widget class="QDoubleSpinBox" name="math_c2_spin">
+             <property name="decimals">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="0">
+            <widget class="QLabel" name="label_20">
+             <property name="text">
+              <string>Computer</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="6">
+            <widget class="QDoubleSpinBox" name="lit_exam_spin">
+             <property name="decimals">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="5">
+            <widget class="QDoubleSpinBox" name="eng_att_spin">
+             <property name="decimals">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item row="17" column="5">
+            <widget class="QSpinBox" name="govt_att_spin"/>
+           </item>
+           <item row="14" column="0" alignment="Qt::AlignRight">
+            <widget class="QLabel" name="label_12">
+             <property name="text">
+              <string>Arabic</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="label_2">
+             <property name="text">
+              <string>Mathematics</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="16" column="2">
+            <widget class="QSpinBox" name="agric_c1_spin"/>
+           </item>
+           <item row="5" column="3">
+            <widget class="QDoubleSpinBox" name="lit_c2_spin">
+             <property name="decimals">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item row="17" column="3">
+            <widget class="QSpinBox" name="govt_c2_spin"/>
+           </item>
+           <item row="13" column="6">
+            <widget class="QSpinBox" name="irs_exam_spin"/>
+           </item>
+           <item row="1" column="4">
+            <widget class="QDoubleSpinBox" name="eng_ass_spin">
+             <property name="decimals">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QLabel" name="label_6">
+             <property name="text">
+              <string>1ST CA</string>
+             </property>
+            </widget>
+           </item>
+           <item row="18" column="3">
+            <widget class="QSpinBox" name="geography_c2_spin"/>
+           </item>
+           <item row="7" column="3">
+            <widget class="QDoubleSpinBox" name="computer_c2_spin">
+             <property name="decimals">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item row="14" column="5">
+            <widget class="QSpinBox" name="arabic_att_spin"/>
+           </item>
+           <item row="9" column="2">
+            <widget class="QDoubleSpinBox" name="biology_c1_spin">
+             <property name="decimals">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="4">
+            <widget class="QDoubleSpinBox" name="math_ass_spin">
+             <property name="decimals">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="6">
+            <widget class="QDoubleSpinBox" name="civic_exam_spin">
+             <property name="decimals">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item row="18" column="6">
+            <widget class="QSpinBox" name="geography_exam_spin"/>
+           </item>
+           <item row="5" column="2">
+            <widget class="QDoubleSpinBox" name="lit_c1_spin">
+             <property name="decimals">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item row="15" column="0" alignment="Qt::AlignRight">
+            <widget class="QLabel" name="label_13">
+             <property name="text">
+              <string>Tajweed</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="3">
+            <widget class="QDoubleSpinBox" name="civic_c2_spin">
+             <property name="decimals">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="6">
+            <widget class="QDoubleSpinBox" name="math_exam_spin">
+             <property name="decimals">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item row="16" column="5">
+            <widget class="QSpinBox" name="agric_att_spin"/>
+           </item>
+           <item row="12" column="4">
+            <widget class="QSpinBox" name="qur_ass_spin"/>
+           </item>
+           <item row="18" column="5">
+            <widget class="QSpinBox" name="geography_att_spin"/>
+           </item>
+           <item row="12" column="6">
+            <widget class="QSpinBox" name="qur_exam_spin"/>
+           </item>
+           <item row="12" column="0" alignment="Qt::AlignRight">
+            <widget class="QLabel" name="label_10">
+             <property name="text">
+              <string>Qur'an</string>
+             </property>
+            </widget>
+           </item>
+           <item row="16" column="0" alignment="Qt::AlignRight">
+            <widget class="QLabel" name="label_14">
+             <property name="text">
+              <string>Agricultural Science</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="4">
+            <widget class="QDoubleSpinBox" name="computer_ass_spin">
+             <property name="decimals">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item row="15" column="3">
+            <widget class="QSpinBox" name="tajweed_c2_spin"/>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string>English Language</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="2">
+            <widget class="QDoubleSpinBox" name="civic_c1_spin">
+             <property name="decimals">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item row="15" column="5">
+            <widget class="QSpinBox" name="tajweed_att_spin"/>
+           </item>
+           <item row="3" column="2">
+            <widget class="QDoubleSpinBox" name="math_c1_spin">
+             <property name="decimals">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item row="17" column="2">
+            <widget class="QSpinBox" name="govt_c1_spin"/>
+           </item>
+           <item row="14" column="3">
+            <widget class="QSpinBox" name="arabic_c2_spin"/>
+           </item>
+           <item row="9" column="5">
+            <widget class="QDoubleSpinBox" name="biology_att_spin">
+             <property name="decimals">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="5">
+            <widget class="QDoubleSpinBox" name="lit_att_spin">
+             <property name="decimals">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item row="13" column="3">
+            <widget class="QSpinBox" name="irs_c2_spin"/>
+           </item>
+           <item row="12" column="5">
+            <widget class="QSpinBox" name="qur_att_spin"/>
+           </item>
+           <item row="9" column="0">
+            <widget class="QLabel" name="label_19">
+             <property name="text">
+              <string>Biology</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="14" column="4">
+            <widget class="QSpinBox" name="arabic_ass_spin"/>
+           </item>
+           <item row="13" column="5">
+            <widget class="QSpinBox" name="irs_att_spin"/>
+           </item>
+           <item row="14" column="6">
+            <widget class="QSpinBox" name="arabic_exam_spin"/>
+           </item>
+           <item row="15" column="2">
+            <widget class="QSpinBox" name="tajweed_c1_spin"/>
+           </item>
+           <item row="7" column="5">
+            <widget class="QDoubleSpinBox" name="computer_att_spin">
+             <property name="decimals">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="6">
+            <widget class="QLabel" name="label_4">
+             <property name="text">
+              <string>EXAM</string>
+             </property>
+            </widget>
+           </item>
+           <item row="17" column="0" alignment="Qt::AlignRight">
+            <widget class="QLabel" name="label_15">
+             <property name="text">
+              <string>Government</string>
+             </property>
+            </widget>
+           </item>
+           <item row="9" column="4">
+            <widget class="QDoubleSpinBox" name="biology_ass_spin">
+             <property name="decimals">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="6">
+            <widget class="QDoubleSpinBox" name="eng_exam_spin">
+             <property name="decimals">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="4">
+            <widget class="QDoubleSpinBox" name="civic_ass_spin">
+             <property name="decimals">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item row="17" column="4">
+            <widget class="QSpinBox" name="govt_ass_spin"/>
+           </item>
+           <item row="9" column="6">
+            <widget class="QDoubleSpinBox" name="biology_exam_spin">
+             <property name="decimals">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item row="13" column="0" alignment="Qt::AlignRight">
+            <widget class="QLabel" name="label_11">
+             <property name="text">
+              <string>I.R.S</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="5">
+            <widget class="QDoubleSpinBox" name="math_att_spin">
+             <property name="decimals">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="4">
+            <widget class="QLabel" name="label_7">
+             <property name="text">
+              <string>ASSIGNMENT</string>
+             </property>
+            </widget>
+           </item>
+           <item row="18" column="2">
+            <widget class="QSpinBox" name="geography_c1_spin"/>
+           </item>
+           <item row="0" column="5">
+            <widget class="QLabel" name="label_9">
+             <property name="text">
+              <string>ATTENDANCE</string>
+             </property>
+            </widget>
+           </item>
+           <item row="14" column="2">
+            <widget class="QSpinBox" name="arabic_c1_spin"/>
+           </item>
+           <item row="5" column="0">
+            <widget class="QLabel" name="label_3">
+             <property name="text">
+              <string>Lit-In-English</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="20" column="0" alignment="Qt::AlignRight">
+            <widget class="QLabel" name="label_8">
+             <property name="text">
+              <string>Economics</string>
+             </property>
+            </widget>
+           </item>
+           <item row="20" column="2">
+            <widget class="QSpinBox" name="econs_c1_spin"/>
+           </item>
+           <item row="20" column="3">
+            <widget class="QSpinBox" name="econs_c2_spin"/>
+           </item>
+           <item row="20" column="4">
+            <widget class="QSpinBox" name="econs_ass_spin"/>
+           </item>
+           <item row="20" column="5">
+            <widget class="QSpinBox" name="econs_att_spin"/>
+           </item>
+           <item row="20" column="6">
+            <widget class="QSpinBox" name="econs_exam_spin"/>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>class_comboBox</tabstop>
+  <tabstop>stud_adm_no_comboBox</tabstop>
+  <tabstop>eng_c1_spin</tabstop>
+  <tabstop>eng_c2_spin</tabstop>
+  <tabstop>eng_ass_spin</tabstop>
+  <tabstop>eng_att_spin</tabstop>
+  <tabstop>eng_exam_spin</tabstop>
+  <tabstop>math_c1_spin</tabstop>
+  <tabstop>math_c2_spin</tabstop>
+  <tabstop>math_ass_spin</tabstop>
+  <tabstop>math_att_spin</tabstop>
+  <tabstop>math_exam_spin</tabstop>
+  <tabstop>lit_c1_spin</tabstop>
+  <tabstop>lit_c2_spin</tabstop>
+  <tabstop>lit_ass_spin</tabstop>
+  <tabstop>lit_att_spin</tabstop>
+  <tabstop>lit_exam_spin</tabstop>
+  <tabstop>civic_c1_spin</tabstop>
+  <tabstop>civic_c2_spin</tabstop>
+  <tabstop>civic_ass_spin</tabstop>
+  <tabstop>civic_att_spin</tabstop>
+  <tabstop>civic_exam_spin</tabstop>
+  <tabstop>computer_c1_spin</tabstop>
+  <tabstop>computer_c2_spin</tabstop>
+  <tabstop>computer_ass_spin</tabstop>
+  <tabstop>computer_att_spin</tabstop>
+  <tabstop>computer_exam_spin</tabstop>
+  <tabstop>biology_c1_spin</tabstop>
+  <tabstop>biology_c2_spin</tabstop>
+  <tabstop>biology_ass_spin</tabstop>
+  <tabstop>biology_att_spin</tabstop>
+  <tabstop>biology_exam_spin</tabstop>
+  <tabstop>qur_c1_spin</tabstop>
+  <tabstop>qur_c2_spin</tabstop>
+  <tabstop>qur_ass_spin</tabstop>
+  <tabstop>qur_att_spin</tabstop>
+  <tabstop>qur_exam_spin</tabstop>
+  <tabstop>irs_c1_spin</tabstop>
+  <tabstop>irs_c2_spin</tabstop>
+  <tabstop>irs_ass_spin</tabstop>
+  <tabstop>irs_att_spin</tabstop>
+  <tabstop>irs_exam_spin</tabstop>
+  <tabstop>arabic_c1_spin</tabstop>
+  <tabstop>arabic_c2_spin</tabstop>
+  <tabstop>arabic_ass_spin</tabstop>
+  <tabstop>arabic_att_spin</tabstop>
+  <tabstop>arabic_exam_spin</tabstop>
+  <tabstop>tajweed_c1_spin</tabstop>
+  <tabstop>tajweed_c2_spin</tabstop>
+  <tabstop>tajweed_ass_spin</tabstop>
+  <tabstop>tajweed_att_spin</tabstop>
+  <tabstop>tajweed_exam_spin</tabstop>
+  <tabstop>agric_c1_spin</tabstop>
+  <tabstop>agric_c2_spin</tabstop>
+  <tabstop>agric_ass_spin</tabstop>
+  <tabstop>agric_att_spin</tabstop>
+  <tabstop>agric_exam_spin</tabstop>
+  <tabstop>govt_c1_spin</tabstop>
+  <tabstop>govt_c2_spin</tabstop>
+  <tabstop>govt_ass_spin</tabstop>
+  <tabstop>govt_att_spin</tabstop>
+  <tabstop>govt_exam_spin</tabstop>
+  <tabstop>geography_c1_spin</tabstop>
+  <tabstop>geography_c2_spin</tabstop>
+  <tabstop>geography_ass_spin</tabstop>
+  <tabstop>geography_att_spin</tabstop>
+  <tabstop>geography_exam_spin</tabstop>
+  <tabstop>history_c1_spin</tabstop>
+  <tabstop>history_c2_spin</tabstop>
+  <tabstop>history_ass_spin</tabstop>
+  <tabstop>history_att_spin</tabstop>
+  <tabstop>history_exam_spin</tabstop>
+  <tabstop>qur_score_btn</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

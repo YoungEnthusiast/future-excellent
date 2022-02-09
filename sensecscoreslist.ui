@@ -1,0 +1,1529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SenSecScoreForm</class>
+ <widget class="QWidget" name="SenSecScoreForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1074</width>
+    <height>773</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Science Senior Secondary Classes Scores (First Term)</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>score2_icon.jpg</normaloff>score2_icon.jpg</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;
+
+QPushButton{
+background-color: rgb(170, 255, 127);
+}</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_4">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QPushButton" name="switch_back_btn">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(84, 210, 255);</string>
+       </property>
+       <property name="text">
+        <string>Refresh - All Classes</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QTableWidget" name="tableWidget">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="alternatingRowColors">
+          <bool>true</bool>
+         </property>
+         <property name="showGrid">
+          <bool>true</bool>
+         </property>
+         <attribute name="horizontalHeaderStretchLastSection">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="verticalHeaderVisible">
+          <bool>true</bool>
+         </attribute>
+         <column>
+          <property name="text">
+           <string>Row/No</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Admission No</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Class</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>English(CA1)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>English(CA2)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>English(ASS)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>English(ATT)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>English(EXAM)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>English(TOTAL)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Maths(CA1)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Maths(CA2)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Maths(ASS)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Maths(ATT)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Maths(EXAM)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Maths(TOTAL)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Civic(CA1)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Civic(CA2)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Civic(ASS)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Civic(ATT)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Civic(EXAM)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Civic(TOTAL)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Computer(CA1)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Computer(CA2)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Computer(ASS)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Computer(ATT)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Computer(EXAM)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Computer(TOTAL)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Biology(CA1)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Biology(CA2)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Biology(ASS)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Biology(ATT)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Biology(EXAM)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Biology(TOTAL)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Chemistry(CA1)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Chemistry(CA2)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Chemistry(ASS)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Chemistry(ATT)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Chemistry(EXAM)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Chemistry(TOTAL)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Further Maths(CA1)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Further Maths(CA2)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Further Maths(ASS)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Further Maths(ATT)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Further Maths(EXAM)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Further Maths(TOTAL)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Physics(CA1)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Physics(CA2)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Physics(ASS)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Physics(ATT)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Physics(EXAM)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Physics(TOTAL)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Quran(CA1)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Quran(CA2)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Quran(ASS)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Quran(ATT)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Quran(EXAM)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Quran(TOTAL)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>IRS(CA1)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>IRS(CA2)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>IRS(ASS)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>IRS(ATT)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>IRS(EXAM)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>IRS(TOTAL)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Arabic(CA1)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Arabic(CA2)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Arabic(ASS)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Arabic(ATT)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Arabic(EXAM)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Arabic(TOTAL)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Tajweed(CA1)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Tajweed(CA2)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Tajweed(ASS)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Tajweed(ATT)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Tajweed(EXAM)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Tajweed(TOTAL)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Agric(CA1)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Agric(CA2)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Agric(ASS)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Agric(ATT)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Agric(EXAM)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Agric(TOTAL)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Geography(CA1)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Geography(CA2)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Geography(ASS)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Geography(ATT)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Geography(EXAM)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Geography(TOTAL)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Econs(CA1)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Econs(CA2)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Econs(ASS)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Econs(ATT)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Econs(EXAM)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Econs(TOTAL)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>All Total</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Average</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="tableWidget_2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="alternatingRowColors">
+          <bool>true</bool>
+         </property>
+         <property name="showGrid">
+          <bool>true</bool>
+         </property>
+         <attribute name="horizontalHeaderStretchLastSection">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="verticalHeaderVisible">
+          <bool>true</bool>
+         </attribute>
+         <column>
+          <property name="text">
+           <string>Row/No</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Admission No</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Class</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>English(CA1)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>English(CA2)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>English(ASS)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>English(ATT)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>English(EXAM)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>English(TOTAL)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Maths(CA1)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Maths(CA2)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Maths(ASS)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Maths(ATT)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Maths(EXAM)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Maths(TOTAL)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Civic(CA1)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Civic(CA2)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Civic(ASS)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Civic(ATT)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Civic(EXAM)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Civic(TOTAL)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Computer(CA1)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Computer(CA2)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Computer(ASS)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Computer(ATT)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Computer(EXAM)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Computer(TOTAL)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Biology(CA1)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Biology(CA2)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Biology(ASS)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Biology(ATT)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Biology(EXAM)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Biology(TOTAL)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Chemistry(CA1)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Chemistry(CA2)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Chemistry(ASS)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Chemistry(ATT)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Chemistry(EXAM)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Chemistry(TOTAL)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Further Maths(CA1)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Further Maths(CA2)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Further Maths(ASS)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Further Maths(ATT)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Further Maths(EXAM)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Further Maths(TOTAL)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Physics(CA1)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Physics(CA2)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Physics(ASS)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Physics(ATT)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Physics(EXAM)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Physics(TOTAL)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Quran(CA1)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Quran(CA2)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Quran(ASS)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Quran(ATT)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Quran(EXAM)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Quran(TOTAL)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>IRS(CA1)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>IRS(CA2)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>IRS(ASS)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>IRS(ATT)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>IRS(EXAM)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>IRS(TOTAL)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Arabic(CA1)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Arabic(CA2)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Arabic(ASS)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Arabic(ATT)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Arabic(EXAM)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Arabic(TOTAL)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Tajweed(CA1)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Tajweed(CA2)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Tajweed(ASS)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Tajweed(ATT)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Tajweed(EXAM)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Tajweed(TOTAL)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Agric(CA1)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Agric(CA2)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Agric(ASS)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Agric(ATT)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Agric(EXAM)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Agric(TOTAL)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Geography(CA1)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Geography(CA2)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Geography(ASS)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Geography(ATT)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Geography(EXAM)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Geography(TOTAL)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>New Column</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Econs(CA2)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>New Column</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Econs(ATT)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Econs(EXAM)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Econs(TOTAL)</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>All Total</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Average</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QPushButton" name="del_btn">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 37, 51);</string>
+         </property>
+         <property name="text">
+          <string>Delete</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pdf_btn">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(170, 255, 127);</string>
+         </property>
+         <property name="text">
+          <string>Convert Report to PDF</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="report_gen_btn">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(170, 255, 127);</string>
+         </property>
+         <property name="text">
+          <string>Print Report</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QComboBox" name="class_comboBox">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(84, 210, 255);</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="stud_adm_no_comboBox">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(84, 210, 255);</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="name_label">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="groupBox">
+       <property name="title">
+        <string>Punctuality</string>
+       </property>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>191</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QRadioButton" name="punctuality_a_radio">
+           <property name="text">
+            <string>A</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="punctuality_b_radio">
+           <property name="text">
+            <string>B</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="punctuality_c_radio">
+           <property name="text">
+            <string>C</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="punctuality_d_radio">
+           <property name="text">
+            <string>D</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="punctuality_e_radio">
+           <property name="text">
+            <string>E</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="groupBox_2">
+       <property name="title">
+        <string>Neatness</string>
+       </property>
+       <widget class="QRadioButton" name="neatness_a_radio">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>41</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>A</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="neatness_b_radio">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>30</y>
+          <width>41</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>B</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="neatness_c_radio">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>30</y>
+          <width>41</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>C</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="neatness_d_radio">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>30</y>
+          <width>51</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>D</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="neatness_e_radio">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>30</y>
+          <width>51</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>E</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="groupBox_3">
+       <property name="title">
+        <string>Games</string>
+       </property>
+       <widget class="QRadioButton" name="games_a_radio">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>51</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>A</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="games_b_radio">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>30</y>
+          <width>51</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>B</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="games_c_radio">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>30</y>
+          <width>41</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>C</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="games_d_radio">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>30</y>
+          <width>41</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>D</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="games_e_radio">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>30</y>
+          <width>51</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>E</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="groupBox_4">
+       <property name="title">
+        <string>Attentiveness in Class</string>
+       </property>
+       <widget class="QRadioButton" name="attentiveness_c_radio">
+        <property name="geometry">
+         <rect>
+          <x>89</x>
+          <y>31</y>
+          <width>33</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>C</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="attentiveness_a_radio">
+        <property name="geometry">
+         <rect>
+          <x>11</x>
+          <y>31</y>
+          <width>34</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>A</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="attentiveness_e_radio">
+        <property name="geometry">
+         <rect>
+          <x>168</x>
+          <y>31</y>
+          <width>32</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>E</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="attentiveness_d_radio">
+        <property name="geometry">
+         <rect>
+          <x>128</x>
+          <y>31</y>
+          <width>34</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>D</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="attentiveness_b_radio">
+        <property name="geometry">
+         <rect>
+          <x>51</x>
+          <y>31</y>
+          <width>32</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>B</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="groupBox_5">
+       <property name="title">
+        <string>Relationship with others</string>
+       </property>
+       <widget class="QRadioButton" name="relationship_a_radio">
+        <property name="geometry">
+         <rect>
+          <x>11</x>
+          <y>33</y>
+          <width>34</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>A</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="relationship_c_radio">
+        <property name="geometry">
+         <rect>
+          <x>103</x>
+          <y>33</y>
+          <width>33</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>C</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="relationship_d_radio">
+        <property name="geometry">
+         <rect>
+          <x>149</x>
+          <y>33</y>
+          <width>34</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>D</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="relationship_e_radio">
+        <property name="geometry">
+         <rect>
+          <x>195</x>
+          <y>33</y>
+          <width>32</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>E</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="relationship_b_radio">
+        <property name="geometry">
+         <rect>
+          <x>57</x>
+          <y>33</y>
+          <width>32</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>B</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="groupBox_6">
+       <property name="title">
+        <string>Honesty</string>
+       </property>
+       <widget class="QRadioButton" name="honesty_e_radio">
+        <property name="geometry">
+         <rect>
+          <x>169</x>
+          <y>31</y>
+          <width>32</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>E</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="honesty_c_radio">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>31</y>
+          <width>33</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>C</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="honesty_a_radio">
+        <property name="geometry">
+         <rect>
+          <x>12</x>
+          <y>31</y>
+          <width>34</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>A</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="honesty_b_radio">
+        <property name="geometry">
+         <rect>
+          <x>52</x>
+          <y>31</y>
+          <width>32</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>B</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="honesty_d_radio">
+        <property name="geometry">
+         <rect>
+          <x>129</x>
+          <y>31</y>
+          <width>34</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>D</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,798 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PriScoreRec3rdForm</class>
+ <widget class="QWidget" name="PriScoreRec3rdForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>958</width>
+    <height>561</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Primary Scores (Third Term)</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>score_icon.png</normaloff>score_icon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;
+
+QPushButton{
+background-color: rgb(170, 255, 127);
+}
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QGroupBox" name="groupBox">
+       <property name="styleSheet">
+        <string notr="true">QComboBox{
+background-color: rgb(165, 209, 255);
+}</string>
+       </property>
+       <property name="title">
+        <string>Record Primary Pupils' Scores</string>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QComboBox" name="class_comboBox"/>
+        </item>
+        <item>
+         <widget class="QComboBox" name="stud_adm_no_comboBox"/>
+        </item>
+        <item>
+         <widget class="QLabel" name="name_label">
+          <property name="styleSheet">
+           <string notr="true">QComboBox{
+background-color: rgb(166, 180, 255);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="1">
+        <widget class="QLabel" name="label_6">
+         <property name="styleSheet">
+          <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+         </property>
+         <property name="text">
+          <string>1ST CA</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="5">
+        <widget class="QLabel" name="label_9">
+         <property name="styleSheet">
+          <string notr="true">font: 75 10pt &quot;MS Shell Dlg 2&quot;;</string>
+         </property>
+         <property name="text">
+          <string>EXAM</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="12" rowspan="3">
+        <widget class="QLabel" name="label_13">
+         <property name="styleSheet">
+          <string notr="true">font: 75 10pt &quot;MS Shell Dlg 2&quot;;</string>
+         </property>
+         <property name="text">
+          <string>EXAM</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0" rowspan="3">
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Quran</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1" rowspan="2">
+        <widget class="QDoubleSpinBox" name="qur_c1_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2" rowspan="2">
+        <widget class="QDoubleSpinBox" name="qur_c2_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3" rowspan="2" colspan="2">
+        <widget class="QDoubleSpinBox" name="qur_ass_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="5" rowspan="2">
+        <widget class="QDoubleSpinBox" name="qur_exam_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="6">
+        <widget class="QLabel" name="label_16">
+         <property name="text">
+          <string>Civic Education</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="7">
+        <widget class="QDoubleSpinBox" name="civic_c1_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="8" colspan="2">
+        <widget class="QDoubleSpinBox" name="civic_c2_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="10" colspan="2">
+        <widget class="QDoubleSpinBox" name="civic_ass_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="12">
+        <widget class="QDoubleSpinBox" name="civic_exam_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Ibadat</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QDoubleSpinBox" name="ibadat_c1_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="QDoubleSpinBox" name="ibadat_c2_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="3" colspan="2">
+        <widget class="QDoubleSpinBox" name="ibadat_ass_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="5">
+        <widget class="QDoubleSpinBox" name="ibadat_exam_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="6">
+        <widget class="QLabel" name="label_17">
+         <property name="text">
+          <string>Verbal Reasoning</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="7">
+        <widget class="QDoubleSpinBox" name="verbal_c1_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="8" colspan="2">
+        <widget class="QDoubleSpinBox" name="verbal_c2_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="10" colspan="2">
+        <widget class="QDoubleSpinBox" name="verbal_ass_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="12">
+        <widget class="QDoubleSpinBox" name="verbal_exam_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>Arabic 1</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QDoubleSpinBox" name="arabic1_c1_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="2">
+        <widget class="QDoubleSpinBox" name="arabic1_c2_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="3" colspan="2">
+        <widget class="QDoubleSpinBox" name="arabic1_ass_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="5">
+        <widget class="QDoubleSpinBox" name="arabic1_exam_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="6">
+        <widget class="QLabel" name="label_18">
+         <property name="text">
+          <string>Quantitative</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="7">
+        <widget class="QDoubleSpinBox" name="quant_c1_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="10" colspan="2">
+        <widget class="QDoubleSpinBox" name="quant_ass_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="12">
+        <widget class="QDoubleSpinBox" name="quant_exam_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_8">
+         <property name="text">
+          <string>Arabic 2</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QDoubleSpinBox" name="arabic2_c1_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="2">
+        <widget class="QDoubleSpinBox" name="arabic2_c2_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="3" colspan="2">
+        <widget class="QDoubleSpinBox" name="arabic2_ass_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="5">
+        <widget class="QDoubleSpinBox" name="arabic2_exam_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="6">
+        <widget class="QLabel" name="label_28">
+         <property name="text">
+          <string>Handwriting</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="7">
+        <widget class="QDoubleSpinBox" name="handwriting_c1_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="8" colspan="2">
+        <widget class="QDoubleSpinBox" name="handwriting_c2_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="10" colspan="2">
+        <widget class="QDoubleSpinBox" name="handwriting_ass_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="12">
+        <widget class="QDoubleSpinBox" name="handwriting_exam_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="label_20">
+         <property name="text">
+          <string>Mathematics</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QDoubleSpinBox" name="math_c1_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="2">
+        <widget class="QDoubleSpinBox" name="math_c2_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="3" colspan="2">
+        <widget class="QDoubleSpinBox" name="math_ass_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="5">
+        <widget class="QDoubleSpinBox" name="math_exam_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="6">
+        <widget class="QLabel" name="label_29">
+         <property name="text">
+          <string>French</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="7">
+        <widget class="QDoubleSpinBox" name="french_c1_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="8" colspan="2">
+        <widget class="QDoubleSpinBox" name="french_c2_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="10" colspan="2">
+        <widget class="QDoubleSpinBox" name="french_ass_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="12">
+        <widget class="QDoubleSpinBox" name="french_exam_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="0">
+        <widget class="QLabel" name="label_21">
+         <property name="text">
+          <string>English</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <widget class="QDoubleSpinBox" name="eng_c1_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="2">
+        <widget class="QDoubleSpinBox" name="eng_c2_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="3" colspan="2">
+        <widget class="QDoubleSpinBox" name="eng_ass_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="5">
+        <widget class="QDoubleSpinBox" name="eng_exam_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="6">
+        <widget class="QLabel" name="label_30">
+         <property name="text">
+          <string>Jolly Phonies</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="7">
+        <widget class="QDoubleSpinBox" name="jolly_c1_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="8" colspan="2">
+        <widget class="QDoubleSpinBox" name="jolly_c2_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="10" colspan="2">
+        <widget class="QDoubleSpinBox" name="jolly_ass_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="12">
+        <widget class="QDoubleSpinBox" name="jolly_exam_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="0">
+        <widget class="QLabel" name="label_22">
+         <property name="text">
+          <string>Computer Studies</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="1">
+        <widget class="QDoubleSpinBox" name="comp_c1_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="2">
+        <widget class="QDoubleSpinBox" name="comp_c2_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="3" colspan="2">
+        <widget class="QDoubleSpinBox" name="comp_ass_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="5">
+        <widget class="QDoubleSpinBox" name="comp_exam_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="0">
+        <widget class="QLabel" name="label_19">
+         <property name="text">
+          <string>Basic Science &amp; Tech</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="1">
+        <widget class="QDoubleSpinBox" name="bas_sc_c1_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="2">
+        <widget class="QDoubleSpinBox" name="bas_sc_c2_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="3" colspan="2">
+        <widget class="QDoubleSpinBox" name="bas_sc_ass_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="5">
+        <widget class="QDoubleSpinBox" name="bas_sc_exam_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="0">
+        <widget class="QLabel" name="label_23">
+         <property name="text">
+          <string>Religion &amp; National Values</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="1">
+        <widget class="QDoubleSpinBox" name="religion_c1_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="2">
+        <widget class="QDoubleSpinBox" name="religion_c2_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="3" colspan="2">
+        <widget class="QDoubleSpinBox" name="religion_ass_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="5">
+        <widget class="QDoubleSpinBox" name="religion_exam_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="8" colspan="2">
+        <widget class="QDoubleSpinBox" name="quant_c2_spin">
+         <property name="decimals">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLabel" name="label_5">
+         <property name="styleSheet">
+          <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+         </property>
+         <property name="text">
+          <string>2ND CA</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3" colspan="2">
+        <widget class="QLabel" name="label_7">
+         <property name="styleSheet">
+          <string notr="true">font: 75 10pt &quot;MS Shell Dlg 2&quot;;</string>
+         </property>
+         <property name="text">
+          <string>ASS</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="7" rowspan="2">
+        <widget class="QLabel" name="label_12">
+         <property name="styleSheet">
+          <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+         </property>
+         <property name="text">
+          <string>1ST CA</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="8" rowspan="2" colspan="2">
+        <widget class="QLabel" name="label_11">
+         <property name="styleSheet">
+          <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+         </property>
+         <property name="text">
+          <string>2ND CA</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="10" rowspan="2" colspan="2">
+        <widget class="QLabel" name="label_10">
+         <property name="styleSheet">
+          <string notr="true">font: 75 10pt &quot;MS Shell Dlg 2&quot;;</string>
+         </property>
+         <property name="text">
+          <string>ASS</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QPushButton" name="qur_score_btn">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(170, 255, 127);</string>
+       </property>
+       <property name="text">
+        <string>Save</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>class_comboBox</tabstop>
+  <tabstop>stud_adm_no_comboBox</tabstop>
+  <tabstop>qur_c1_spin</tabstop>
+  <tabstop>qur_c2_spin</tabstop>
+  <tabstop>qur_ass_spin</tabstop>
+  <tabstop>qur_exam_spin</tabstop>
+  <tabstop>ibadat_c1_spin</tabstop>
+  <tabstop>ibadat_c2_spin</tabstop>
+  <tabstop>ibadat_ass_spin</tabstop>
+  <tabstop>ibadat_exam_spin</tabstop>
+  <tabstop>arabic1_c1_spin</tabstop>
+  <tabstop>arabic1_c2_spin</tabstop>
+  <tabstop>arabic1_ass_spin</tabstop>
+  <tabstop>arabic1_exam_spin</tabstop>
+  <tabstop>arabic2_c1_spin</tabstop>
+  <tabstop>arabic2_c2_spin</tabstop>
+  <tabstop>arabic2_ass_spin</tabstop>
+  <tabstop>arabic2_exam_spin</tabstop>
+  <tabstop>math_c1_spin</tabstop>
+  <tabstop>math_c2_spin</tabstop>
+  <tabstop>math_ass_spin</tabstop>
+  <tabstop>math_exam_spin</tabstop>
+  <tabstop>eng_c1_spin</tabstop>
+  <tabstop>eng_c2_spin</tabstop>
+  <tabstop>eng_ass_spin</tabstop>
+  <tabstop>eng_exam_spin</tabstop>
+  <tabstop>comp_c1_spin</tabstop>
+  <tabstop>comp_c2_spin</tabstop>
+  <tabstop>comp_ass_spin</tabstop>
+  <tabstop>comp_exam_spin</tabstop>
+  <tabstop>bas_sc_c1_spin</tabstop>
+  <tabstop>bas_sc_c2_spin</tabstop>
+  <tabstop>bas_sc_ass_spin</tabstop>
+  <tabstop>bas_sc_exam_spin</tabstop>
+  <tabstop>religion_c1_spin</tabstop>
+  <tabstop>religion_c2_spin</tabstop>
+  <tabstop>religion_ass_spin</tabstop>
+  <tabstop>religion_exam_spin</tabstop>
+  <tabstop>civic_c1_spin</tabstop>
+  <tabstop>civic_c2_spin</tabstop>
+  <tabstop>civic_ass_spin</tabstop>
+  <tabstop>civic_exam_spin</tabstop>
+  <tabstop>verbal_c1_spin</tabstop>
+  <tabstop>verbal_c2_spin</tabstop>
+  <tabstop>verbal_ass_spin</tabstop>
+  <tabstop>verbal_exam_spin</tabstop>
+  <tabstop>quant_c1_spin</tabstop>
+  <tabstop>quant_c2_spin</tabstop>
+  <tabstop>quant_ass_spin</tabstop>
+  <tabstop>quant_exam_spin</tabstop>
+  <tabstop>handwriting_c1_spin</tabstop>
+  <tabstop>handwriting_c2_spin</tabstop>
+  <tabstop>handwriting_ass_spin</tabstop>
+  <tabstop>handwriting_exam_spin</tabstop>
+  <tabstop>french_c1_spin</tabstop>
+  <tabstop>french_c2_spin</tabstop>
+  <tabstop>french_ass_spin</tabstop>
+  <tabstop>french_exam_spin</tabstop>
+  <tabstop>jolly_c1_spin</tabstop>
+  <tabstop>jolly_c2_spin</tabstop>
+  <tabstop>jolly_ass_spin</tabstop>
+  <tabstop>jolly_exam_spin</tabstop>
+  <tabstop>qur_score_btn</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
